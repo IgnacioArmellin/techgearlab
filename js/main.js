@@ -123,6 +123,29 @@ catBtns.forEach(btn => {
   });
 });
 
+// ── Filtro desde el menú superior (#cat=...) ──
+// El menú agrupa varias categorías: Hardware = GPU + CPU + SSD, etc.
+const NAV_GROUPS = {
+  laptops: ['laptop'],
+  hardware: ['gpu', 'cpu', 'almacenamiento'],
+  perifericos: ['teclado', 'raton', 'monitor', 'auriculares', 'streaming', 'setup']
+};
+
+function aplicarFiltroDesdeHash() {
+  const m = location.hash.match(/^#cat=([\w-]+)$/);
+  if (!m || !cards.length) return;
+  const grupo = NAV_GROUPS[m[1]] || [m[1]];
+  catBtns.forEach(b => b.classList.remove('active'));
+  const btnExacto = [...catBtns].find(b => grupo.length === 1 && b.dataset.cat === grupo[0]);
+  if (btnExacto) btnExacto.classList.add('active');
+  cards.forEach(card => {
+    card.style.display = grupo.includes(card.dataset.category) ? '' : 'none';
+  });
+  document.getElementById('articulos')?.scrollIntoView({ behavior: 'smooth' });
+}
+window.addEventListener('hashchange', aplicarFiltroDesdeHash);
+aplicarFiltroDesdeHash();
+
 // ── Live search ──
 const searchInput = document.getElementById('search-input');
 
