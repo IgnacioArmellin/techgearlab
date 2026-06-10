@@ -14,7 +14,7 @@ const MONETIZACION = {
   amazonDominio: 'com',
 
   // Tu ID de medición de Google Analytics. Ejemplo: 'G-XXXXXXXXXX'
-  googleAnalyticsId: ''
+  googleAnalyticsId: 'G-FRTDVM972R'
 };
 
 // ── Google Analytics 4 ──
