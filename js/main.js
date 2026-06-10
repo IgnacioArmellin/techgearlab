@@ -55,7 +55,7 @@ document.querySelectorAll('[data-amazon]').forEach(el => {
   if (prose && document.querySelector('[data-amazon]')) {
     const aviso = document.createElement('p');
     aviso.className = 'affiliate-disclosure';
-    aviso.innerHTML = 'ℹ️ <strong>Aviso:</strong> TechGearLab participa en el programa de afiliados de Amazon. Si compras a través de nuestros enlaces podemos recibir una pequeña comisión, sin coste adicional para ti.';
+    aviso.innerHTML = 'ℹ️ <strong>Aviso:</strong> ZonaBenchmark participa en el programa de afiliados de Amazon. Si compras a través de nuestros enlaces podemos recibir una pequeña comisión, sin coste adicional para ti.';
     prose.insertBefore(aviso, prose.firstChild);
   }
 })();
