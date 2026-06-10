@@ -712,6 +712,67 @@ footer ul a:hover { color: var(--accent); }
   nav a { padding: .75rem 1rem; border-radius: 8px; }
 }
 
+/* ── Monetización: botón de Amazon ── */
+.btn-amazon {
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  background: #FF9900;
+  color: #0F172A;
+  font-weight: 700;
+  font-size: .9375rem;
+  padding: .7rem 1.4rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  margin: .5rem 0 1.5rem;
+  transition: background var(--transition), transform var(--transition), box-shadow var(--transition);
+}
+
+.btn-amazon:hover {
+  background: #E88B00;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 16px rgba(255,153,0,.4);
+}
+
+.btn-amazon::before { content: '🛒'; }
+
+/* ── Aviso de afiliados ── */
+.affiliate-disclosure {
+  background: #FFFBEB;
+  border: 1px solid #FDE68A;
+  border-radius: 8px;
+  padding: .75rem 1rem;
+  font-size: .8125rem !important;
+  color: #92400E !important;
+  line-height: 1.5 !important;
+  margin-bottom: 1.5rem !important;
+}
+
+.affiliate-disclosure strong { color: #92400E; }
+
+/* ── Contenedor de anuncios ── */
+.ad-container {
+  margin: 2rem 0;
+  text-align: center;
+  min-height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ad-container::before {
+  content: 'Publicidad';
+  position: absolute;
+  font-size: .65rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  transform: translateY(-1.5rem);
+}
+
+.ad-container.empty { display: none; }
+
 /* ── Utilities ── */
 .text-muted { color: var(--text-muted); }
 .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; }
