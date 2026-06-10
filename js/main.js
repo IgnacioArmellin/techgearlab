@@ -5,13 +5,13 @@
 // ═══════════════════════════════════════════════════════════════
 const MONETIZACION = {
   // Tu "tag" de Amazon Afiliados. Ejemplo: 'techgearlab-21'
-  amazonTag: '',
+  amazonTag: 'techgearlab-20',
 
   // Tu ID de editor de Google AdSense. Ejemplo: 'ca-pub-1234567890123456'
   adsensePublisherId: '',
 
   // Tienda de Amazon a usar para los enlaces (es = España, com = EE.UU., com.mx = México)
-  amazonDominio: 'es'
+  amazonDominio: 'com'
 };
 
 // ── Google AdSense (Auto Ads) ──
