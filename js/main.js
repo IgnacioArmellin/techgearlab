@@ -11,8 +11,23 @@ const MONETIZACION = {
   adsensePublisherId: '',
 
   // Tienda de Amazon a usar para los enlaces (es = España, com = EE.UU., com.mx = México)
-  amazonDominio: 'com'
+  amazonDominio: 'com',
+
+  // Tu ID de medición de Google Analytics. Ejemplo: 'G-XXXXXXXXXX'
+  googleAnalyticsId: 'G-FRTDVM972R'
 };
+
+// ── Google Analytics 4 ──
+if (MONETIZACION.googleAnalyticsId) {
+  const ga = document.createElement('script');
+  ga.async = true;
+  ga.src = 'https://www.googletagmanager.com/gtag/js?id=' + MONETIZACION.googleAnalyticsId;
+  document.head.appendChild(ga);
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){ dataLayer.push(arguments); }
+  gtag('js', new Date());
+  gtag('config', MONETIZACION.googleAnalyticsId);
+}
 
 // ── Google AdSense (Auto Ads) ──
 if (MONETIZACION.adsensePublisherId) {
