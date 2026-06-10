@@ -46,6 +46,21 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://ignacioarmellin.github.io/techgearlab/articulos/mejores-sillas-gaming.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ignacioarmellin.github.io/techgearlab/articulos/mejores-ssd-gaming.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ignacioarmellin.github.io/techgearlab/articulos/mejores-microfonos-streaming.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://ignacioarmellin.github.io/techgearlab/aviso-legal.html</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
