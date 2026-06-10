@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://ignacioarmellin.github.io/techgearlab/sitemap.xml
+Sitemap: https://ignacioarmellin.github.io/zonabenchmark/sitemap.xml
