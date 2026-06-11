@@ -127,8 +127,8 @@ catBtns.forEach(btn => {
 // El menú agrupa varias categorías: Hardware = GPU + CPU + SSD, etc.
 const NAV_GROUPS = {
   laptops: ['laptop'],
-  hardware: ['gpu', 'cpu', 'almacenamiento'],
-  perifericos: ['teclado', 'raton', 'monitor', 'auriculares', 'streaming', 'setup']
+  hardware: ['gpu', 'cpu', 'almacenamiento', 'pc'],
+  perifericos: ['teclado', 'raton', 'monitor', 'auriculares', 'streaming', 'setup', 'mando']
 };
 
 function aplicarFiltroDesdeHash() {
